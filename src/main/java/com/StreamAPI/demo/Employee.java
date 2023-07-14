@@ -1,7 +1,6 @@
 package com.StreamAPI.demo;
 
 import org.springframework.util.StringUtils;
-
 public class Employee {
     private String firstName;
     private String lastName;

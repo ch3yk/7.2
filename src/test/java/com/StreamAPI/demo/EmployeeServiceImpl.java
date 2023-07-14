@@ -1,6 +1,5 @@
 package com.StreamAPI.demo;
 
-
 import org.apache.tomcat.util.http.parser.HttpParser;
 import org.springframework.stereotype.Service;
 
@@ -15,10 +14,10 @@ import static java.util.stream.Collectors.groupingBy;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
     List<Employee> staff = new ArrayList<>(List.of(
-            new Employee("Чернов", "Данила", 60_000, 2),
-            new Employee("Григорьев", "Олег", 50_000, 4),
-            new Employee("Беляев", "Максим", 70_000, 2),
-            new Employee("Александров", "Кирилл", 90_000, 1)
+            new Employee("Ковалюсь", "Иван", 60_000, 2),
+            new Employee("Голуб", "Богдан", 50_000, 4),
+            new Employee("Голубцов", "Валерий", 70_000, 2),
+            new Employee("Голубцов", "Ростислав", 90_000, 1)
     ));
 
     @Override
@@ -65,4 +64,4 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employee;
     }
 
-}}
+}
